@@ -239,3 +239,143 @@ cnames <- c("patient", "age", "weight", "bp", "rating", "test")
 colnames(my_data) <- cnames
 
 my_data
+
+#Lesson_8 Logic 
+
+TRUE == TRUE
+
+(FALSE == TRUE) == FALSE
+
+6 == 7
+
+6 < 7
+
+10 <= 10
+
+5 != 7
+
+!(5 == 7)
+
+FALSE & FALSE
+
+TRUE & c(TRUE, FALSE, FALSE)
+
+TRUE && c(TRUE, FALSE, FALSE)
+
+TRUE | c(TRUE, FALSE, FALSE)
+
+TRUE || c(TRUE, FALSE, FALSE)
+
+5 > 8 || 6 != 8 && 4 > 3.9
+
+isTRUE(6 > 4)
+
+identical('twins', 'twins')
+
+xor(5 == 6, !FALSE)
+
+ints <- sample(10)
+
+ints
+
+ints > 5
+
+which(ints > 7)
+
+boring_function
+
+any(ints < 0)
+
+all(ints > 0)
+
+# Lesson_8 Functions
+
+Sys.Date()
+
+mean(c(2, 4, 5))
+
+boring_function('My first function!')
+
+my_mean(c(4, 5, 10))
+
+remainder(5)
+
+remainder(11, 5)
+
+remainder(divisor = 11, num = 5)
+
+remainder(4, div = 2)
+
+args(remainder)
+
+evaluate (sd,c(1.4, 3.6, 7.9, 8.8))
+
+evaluate(function(x){x+1}, 6)
+
+evaluate(function(x){x[1]}, c(8, 4, 0))
+
+evaluate(function(x){x[length(x)]}, c(8, 4, 0))
+
+?paste
+
+paste("Programming", "is", "fun!")
+
+telegram("I love my dog")
+
+mad_libs()
+
+'I' %p% 'love' %p% 'R!'
+
+#lesson_14 date and time 
+
+d1 <- Sys.Date()
+
+class(d1)
+
+unclass(d1)
+
+d1
+
+d2 <- as.Date("1969-01-01")
+
+unclass(d2)
+
+t1 <- Sys.time()
+
+t1
+
+class(t1)
+
+unclass(t1)
+
+t2 <- as.POSIXlt(Sys.time())
+
+class(t2)
+
+t2
+
+unclass (t2)
+
+str(unclass(t2))
+
+t2$min
+
+weekdays(d1)
+
+months(t1)
+
+quarters(t2)
+
+t3 <- "October 17, 1986 08:24"
+
+t4 <- strptime(t3, "%B %d, %Y %H:%M")
+
+t4
+
+class(t4)
+
+Sys.time() > t1
+
+Sys.time() - t1
+
+difftime(Sys.time(), t1, units = 'days')
